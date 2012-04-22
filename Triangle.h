@@ -8,8 +8,8 @@
 class Triangle
 {
 public:
-	GLuint VBO;
-	GLuint Indices;
+	GLuint Buffer;
+
 
 	float ZRot;
 
