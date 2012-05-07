@@ -1,6 +1,7 @@
 #include <iostream>
 #include <GL\glew.h>
 #include <glfw.h>
+#include <glm/glm.hpp>
 #include "Triangle.h"
 
 int Width = 800;
@@ -13,8 +14,11 @@ int main()
       std::cout << "GLFW failed to initialize!\n";
       return 1;
    }
+
+	glfwOpenWindowHint(GLFW_FSAA_SAMPLES, 4);
+
    glfwOpenWindow(Width,Height,8,8,8,0,0,0,GLFW_WINDOW); // open the window 
-   glfwSetWindowTitle("Vertex Buffer Object Test"); // title
+   glfwSetWindowTitle("Shaders"); // title
    glViewport(0,0,Width, Height); // stuff
    glMatrixMode(GL_PROJECTION); // matrix mode
    glLoadIdentity(); // stuff
@@ -31,6 +35,8 @@ int main()
 
    Tri.Load();
 
+   //Tri.LoadMatrix();
+
 	while (true)
 	{
 
@@ -45,7 +51,7 @@ int main()
 		// Updates above clear.
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		// Draws under clear.
-	
+
 		Tri.Draw();
 
 		glfwSwapBuffers();
