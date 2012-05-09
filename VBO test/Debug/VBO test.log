@@ -1,0 +1,17 @@
+﻿Build started 5/8/2012 10:00:57 PM.
+     1>Project "C:\Users\Maxim\VBO\VBO test\VBO test\VBO test.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\VBO test.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         VBO test.vcxproj -> C:\Users\Maxim\VBO\VBO test\Debug\VBO test.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\VBO test.unsuccessfulbuild".
+         Touching "Debug\VBO test.lastbuildstate".
+     1>Done Building Project "C:\Users\Maxim\VBO\VBO test\VBO test\VBO test.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.23
